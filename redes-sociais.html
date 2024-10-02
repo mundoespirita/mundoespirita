@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Redes Sociais - mundo.espirita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Inclua o mesmo estilo do arquivo index.html */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0; /* Fundo leve para a página */
@@ -16,8 +16,12 @@
         }
         header {
             background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
-            padding: 20px;
+            padding: 40px; /* Aumente o padding do header */
             text-align: center;
+        }
+        h1 {
+            font-size: 6em; /* Aumente o tamanho da fonte do cabeçalho */
+            margin: 0; /* Remove a margem padrão do cabeçalho */
         }
         nav {
             display: flex;
@@ -48,6 +52,14 @@
             margin-left: 5px; /* Espaço entre o ícone e o texto */
             font-size: 1.2em; /* Tamanho do texto */
         }
+        .email-section {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.2em; /* Tamanho do texto do e-mail */
+        }
+        .email-section i {
+            margin-right: 5px; /* Espaço entre o ícone e o texto do e-mail */
+        }
     </style>
 </head>
 <body>
@@ -68,15 +80,26 @@
             <h2>Redes Sociais</h2>
             <p>Siga-me nas redes sociais e acompanhe todas as atualizações e novos conteúdos:</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/seuperfil" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>
-                <a href="https://www.youtube.com/@_mundo_espirita" target="_blank"><i class="fab fa-youtube"></i><span>YouTube</span></a>
+                <a href="https://www.instagram.com/_mundo_espirita" target="_blank">
+                    <i class="fab fa-instagram"></i><span>Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/@_mundo_espirita" target="_blank">
+                    <i class="fab fa-youtube"></i><span>YouTube</span>
+                </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 mundo espírita. Todos os direitos reservados.</p>
+        <div class="email-section">
+            <i class="fas fa-envelope"></i><span>mundoespirita00@gmail.com</span>
+        </div>
+        
     </footer>
 
 </body>
 </html>
+
+
+
+
