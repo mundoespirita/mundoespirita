@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Textos - mundo.espirita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00FFFF; /* Cor de fundo azul ciano */
+            color: black; /* Texto em preto para melhor legibilidade */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 6em; /* Aumentado para 6em */
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            padding: 10px 0;
+        }
+        nav a {
+            color: black; /* Texto em preto */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade para legibilidade */
+            padding: 20px;
+            border-radius: 10px; /* Bordas arredondadas */
+        }
+        h2 {
+            border-bottom: 2px solid #b0e0e6; /* Azul claro (Light Steel Blue) para os títulos */
+            padding-bottom: 5px;
+        }
+        .accordion {
+            background-color: #e0f7fa; /* Cor de fundo para as seções do acordeão */
+            border: 1px solid #b0e0e6; /* Borda azul clara */
+            border-radius: 5px; /* Bordas arredondadas */
+            margin: 10px 0; /* Margem entre os textos */
+        }
+        .accordion-title {
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .accordion-title:hover {
+            background-color: #b0e0e6; /* Muda a cor ao passar o mouse */
+        }
+        .accordion-content {
+            display: none; /* Inicialmente escondido */
+            padding: 15px;
+        }
+        footer {
+            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>mundo.espirita</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="textos.html">Textos</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="redes-sociais.html">Redes Sociais</a>
+    </nav>
+
+    <section id="textos">
+        <div class="content">
+            <h2>Textos</h2>
+            <p>Seja bem-vindo ao mundo.espirita! Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. A cada texto, espero trazer luz e inspiração para que possamos trilhar juntos um caminho de evolução.</p>
+            
+            <div class="accordion">
+                <div class="accordion-title" onclick="toggleAccordion('texto1')">Amizade</div>
+                <div class="accordion-content" id="texto1">
+                    <p>Em produção.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-title" onclick="toggleAccordion('texto2')">Reencarnação</div>
+                <div class="accordion-content" id="texto2">
+                    <p>Em produção.</p>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-title" onclick="toggleAccordion('texto3')">Alma Gêmea</div>
+                <div class="accordion-content" id="texto3">
+                    <p>Em produção.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
+

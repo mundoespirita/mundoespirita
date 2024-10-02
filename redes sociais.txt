@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redes Sociais - mundo.espirita</title>
+    <style>
+        /* Inclua o mesmo estilo do arquivo index.html */
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>mundo.espirita</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="textos.html">Textos</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="redes-sociais.html">Redes Sociais</a>
+    </nav>
+
+    <section id="redes-sociais">
+        <div class="content">
+            <h2>Redes Sociais</h2>
+            <p>Siga-me nas redes sociais e acompanhe todas as atualizações e novos conteúdos:</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/seuperfil" target="_
+
+      <a href="https://www.instagram.com/seuperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@_mundo_espirita" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
