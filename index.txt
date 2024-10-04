@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mundo.espirita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6; /* Azul claro */
+            color: black; /* Texto em preto para melhor legibilidade */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
+            padding: 10px 0;
+        }
+        nav a {
+            color: black; /* Texto em preto */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            border-bottom: 2px solid #b0e0e6; /* Azul claro (Light Steel Blue) para os títulos */
+            padding-bottom: 5px;
+        }
+        footer {
+            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: black; /* Texto em preto */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.5em; /* Tamanho dos ícones */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%; /* Imagem não excede a largura do contêiner */
+            height: auto; /* Altura automática para manter a proporção */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>mundo.espirita</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="textos.html">Textos</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="redes-sociais.html">Redes Sociais</a>
+    </nav>
+
+    <!-- Página Inicial -->
+    <section id="home">
+        <div class="content">
+            <h2>Bem-vindo ao mundo.espirita!</h2>
+            <p>Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. Explore nossos textos, vídeos e redes sociais para uma jornada de evolução e aprendizado.</p>
+
+            <!-- Seção de Imagem -->
+            <div class="image-container">
+                <h3>Imagem Inspiradora</h3>
+                <img src="sua-imagem-aqui.jpg" alt="Descrição da Imagem" style="width: 60%;"> <!-- Altere o src e ajuste a largura conforme necessário -->
+                <p>Esta é uma imagem que representa a espiritualidade e o crescimento interior.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
+        <div>
+            <a href="https://www.instagram.com/_mundo_espirita?igsh=MXEzbG9wMTc0MG54aw==" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@_mundo_espirita" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
