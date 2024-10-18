@@ -1,4 +1,40 @@
-Os Laços da Amizade no Espiritismo
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perdão - Mundo Espírita</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Fonte padrão */
+            background-color: #f8f8f8; /* Cor de fundo suave */
+            color: #333; /* Texto em cinza escuro para melhor contraste */
+            margin: 0;
+            padding: 20px; /* Adiciona um pouco de espaçamento */
+        }
+        h1 {
+            font-size: 2.5em; /* Tamanho do título */
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+            color: #007BFF; /* Cor do título */
+            text-align: center; /* Centraliza o título */
+        }
+        p {
+            line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+            margin-bottom: 20px; /* Espaçamento abaixo de cada parágrafo */
+            text-align: justify; /* Justifica o texto */
+        }
+        footer {
+            margin-top: 40px; /* Espaçamento acima do rodapé */
+            text-align: center; /* Centraliza o texto do rodapé */
+            font-size: 0.9em; /* Tamanho da fonte do rodapé */
+            color: #666; /* Cor do texto do rodapé */
+        }
+    </style>
+</head>
+<body>
+    <h1>Os Laços da Amizade no Espiritismo</h1>
+    <p>
 
 Hoje vamos refletir sobre os laços, sejam eles antigos ou recentes, que unem diferentes espíritos e nos conduzem à felicidade. Qual o verdadeiro papel da amizade em nossas vidas espirituais?
 
@@ -35,3 +71,10 @@ A verdadeira amizade enxerga além dos defeitos. Amar o amigo é aceitar suas im
 Precisamos reconhecer que nossos amigos têm seus próprios pensamentos e que suas escolhas não precisam ser iguais às nossas. A verdadeira felicidade na amizade reside no bem-estar daqueles que amamos. Assim como esperamos ser aceitos como somos, devemos aceitar nossos amigos do jeito que são.
 
 Conforme Jesus nos ensinou a amar até mesmo nossos inimigos, quanto mais amor devemos oferecer aos que nos entregam o coração?
+    </p>
+
+    <footer>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
