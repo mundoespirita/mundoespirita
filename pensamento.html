@@ -1,151 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Pensamento | mundo.espirita</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #add8e6;
-      color: black;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background-color: #b0e0e6;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #b0e0e6;
-      padding: 10px 0;
-    }
-    nav a {
-      color: black;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 1.2em;
-    }
-    main {
-      flex: 1;
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h2 {
-      border-bottom: 2px solid #4682b4;
-      padding-bottom: 5px;
-      color: #003366;
-    }
-    .accordion {
-      margin-bottom: 15px;
-      border: 1px solid #b0e0e6;
-      border-radius: 10px;
-      background-color: #ffffffc2;
-    }
-    .accordion-title {
-      padding: 15px;
-      font-weight: bold;
-      font-size: 1.2em;
-      background-color: #d3ecf2;
-      cursor: pointer;
-    }
-    .accordion-content {
-      padding: 15px;
-      display: none;
-    }
-    footer {
-      background-color: #b0e0e6;
-      padding: 20px;
-      text-align: center;
-    }
-    footer a {
-      color: black;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 1.5em;
-    }
-  </style>
-  <script>
-    function toggleAccordion(id, file) {
-      const content = document.getElementById(id);
-      const isVisible = content.style.display === "block";
-
-      document.querySelectorAll('.accordion-content').forEach(div => {
-        div.style.display = 'none';
-      });
-
-      if (!isVisible) {
-        if (!content.dataset.loaded) {
-          content.innerHTML = "<p>Carregando...</p>";
-          fetch(file)
-            .then(response => response.text())
-            .then(data => {
-              content.innerHTML = data;
-              content.dataset.loaded = "true";
-              content.style.display = "block";
-            })
-            .catch(() => {
-              content.innerHTML = "<p>Erro ao carregar o conteúdo.</p>";
-              content.style.display = "block";
-            });
-        } else {
-          content.style.display = "block";
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pensamentos - Mundo Espírita</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Fundo branco */
+            color: black;
+            margin: 0;
+            padding: 0;
         }
-      }
-    }
-  </script>
+        header {
+            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 6em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(176, 224, 230, 0.8);
+            padding: 10px 0;
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            border-bottom: 2px solid #b0e0e6;
+            padding-bottom: 5px;
+        }
+        .intro-text {
+            font-size: 1.3em;
+            letter-spacing: 0.05em;
+            word-spacing: 0.15em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .accordion {
+            background-color: #e0f7fa;
+            border: 1px solid #b0e0e6;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .accordion-title {
+            padding: 15px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: left;
+            transition: background-color 0.3s;
+        }
+        .accordion-title:hover {
+            background-color: #b0e0e6;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+        }
+        footer {
+            background-color: rgba(176, 224, 230, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function toggleAccordion(id, filename) {
+            const content = document.getElementById(id);
+            const isVisible = content.style.display === "block";
+
+            // Esconde todos os conteúdos
+            document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+
+            if (!isVisible) {
+                loadText(id, filename);
+                content.style.display = "block";
+                content.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                content.style.display = "none";
+            }
+        }
+
+        function loadText(id, filename) {
+            fetch(filename)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro ao carregar o arquivo: ${response.statusText}`);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => {
+                    document.getElementById(id).innerHTML = `<p style="color:red;">Erro ao carregar o conteúdo.</p>`;
+                    console.error('Erro ao carregar o texto:', error);
+                });
+        }
+    </script>
 </head>
 <body>
 
-  <header>
-    <h1>mundo.espirita</h1>
-  </header>
+    <header>
+        <h1>Mundo Espírita</h1>
+    </header>
 
-  <nav>
-    <a href="./index.html">Home</a>
-    <a href="./textos.html">Textos</a>
-    <a href="./pensamento.html">Pensamento</a>
-    <a href="./videos.html">Vídeos</a>
-    <a href="./redes-sociais.html">Redes Sociais</a>
-  </nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="textos.html">Textos</a>
+        <a href="pensamentos.html">Pensamentos</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="redes-sociais.html">Redes Sociais</a>
+    </nav>
 
-  <main>
-    <h2>Pensamento</h2>
-    <p>Escolha um pensamento para refletir:</p>
+    <section id="pensamentos">
+        <div class="content">
+            <h2>Pensamentos</h2>
+            <p class="intro-text">
+                Reflexões curtas e profundas para inspirar sua caminhada espiritual. Escolha um pensamento e deixe-se tocar pela luz da sabedoria.
+            </p>
 
-    <div class="accordion">
-      <div class="accordion-title" onclick="toggleAccordion('texto1', 'fe.html')">A fé transporta montanhas</div>
-      <div class="accordion-content" id="texto1"></div>
-    </div>
+            <div class="accordion">
+                <div class="accordion-title" onclick="toggleAccordion('texto1', 'pensamento1.html')">A fé transporta montanhas</div>
+                <div class="accordion-content" id="texto1"></div>
+            </div>
 
-  
+            <div class="accordion">
+                <div class="accordion-title" onclick="toggleAccordion('texto2', 'pensamento2.html')">O valor da gratidão</div>
+                <div class="accordion-content" id="texto2"></div>
+            </div>
 
-    <!-- Adicione mais acordeões conforme desejar -->
+            <div class="accordion">
+                <div class="accordion-title" onclick="toggleAccordion('texto3', 'pensamento3.html')">Caminho da luz</div>
+                <div class="accordion-content" id="texto3"></div>
+            </div>
+            <!-- Adicione mais pensamentos seguindo o mesmo padrão -->
+        </div>
+    </section>
 
-  </main>
-
-  <footer>
-    <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
-    <div>
-      <a href="https://www.instagram.com/_mundo_espirita" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.youtube.com/@_mundo_espirita" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-youtube"></i>
-      </a>
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
