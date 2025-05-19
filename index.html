@@ -24,12 +24,12 @@
         }
         header h1 {
             margin: 0;
-            font-size: 6em; /* Igual à página de vídeos */
+            font-size: 6em; /* Tamanho grande como na página de vídeos */
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 10px 0;
         }
         nav a {
@@ -47,16 +47,20 @@
         .content {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 10px;
         }
         h2 {
             border-bottom: 2px solid #b0e0e6;
             padding-bottom: 5px;
+            font-size: 2em; /* Aumentado */
         }
         p {
             line-height: 1.6;
+        }
+        .intro-text {
+            font-size: 1.3em; /* Aumentado */
         }
         footer {
             background-color: rgba(176, 224, 230, 0.8);
@@ -95,7 +99,9 @@
     <section id="home">
         <div class="content">
             <h2>Bem-vindo ao mundo.espirita!</h2>
-            <p>Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. Explore nossos textos, vídeos e redes sociais para uma jornada de evolução e aprendizado.</p>
+            <p class="intro-text">
+                Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. Explore nossos textos, vídeos e redes sociais para uma jornada de evolução e aprendizado.
+            </p>
         </div>
     </section>
 
@@ -109,3 +115,4 @@
 
 </body>
 </html>
+
