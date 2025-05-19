@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,26 +10,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-image: url('file:///C:/Users/luiza.meireles/Downloads/Convite%20Anivers%C3%A1rio%20Infantil%20Espa%C3%A7o%20Astronauta%20Roxo%20e%20Preto%20(2).png'); /* Substitua pelo seu link de imagem aqui */
-            background-size: cover; /* Cobre toda a área */
-            background-position: center 10px; /* Mova a imagem 10 pixels para baixo */
+            background-color: #add8e6; /* Azul claro */
             color: black; /* Texto em preto para melhor legibilidade */
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
             padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 6em;
+            font-size: 2.5em;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
             padding: 10px 0;
         }
         nav a {
@@ -40,28 +39,16 @@
         section {
             padding: 20px;
         }
-        #home {
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente para a seção */
-            padding: 40px; /* Aumenta o espaçamento interno para manter a seção grande */
-            border-radius: 8px; /* Cantos arredondados (opcional) */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil (opcional) */
-            margin: 20px auto; /* Centraliza a seção */
-            max-width: 800px; /* Largura máxima da seção */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
         }
         h2 {
-            color: #003366; /* Azul escuro para contraste */
             border-bottom: 2px solid #b0e0e6; /* Azul claro (Light Steel Blue) para os títulos */
             padding-bottom: 5px;
-            font-size: 2em; /* Aumenta o tamanho da letra do título */
-        }
-        p {
-            font-size: 1.2em; /* Aumenta o tamanho da letra do parágrafo */
-        }
-        .text-paragraph {
-            font-size: 1.5em; /* Aumenta o tamanho do texto do parágrafo */
         }
         footer {
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
             padding: 20px;
             text-align: center;
             position: relative;
@@ -72,14 +59,22 @@
             color: black; /* Texto em preto */
             text-decoration: none;
             margin: 0 10px;
-            font-size: 2em; /* Tamanho dos ícones */
+            font-size: 1.5em; /* Tamanho dos ícones */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%; /* Imagem não excede a largura do contêiner */
+            height: auto; /* Altura automática para manter a proporção */
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Mundo Espírita</h1>
+        <h1>mundo.espirita</h1>
     </header>
 
     <nav>
@@ -87,18 +82,28 @@
         <a href="textos.html">Textos</a>
         <a href="videos.html">Vídeos</a>
         <a href="redes-sociais.html">Redes Sociais</a>
+	<a href="pensamento.html">Pensamentos</a>
+	
     </nav>
 
     <!-- Página Inicial -->
     <section id="home">
         <div class="content">
-            <h2>Bem-vindo ao mundo espírita!</h2>
-            <p class="text-paragraph">Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. Explore nossos textos, vídeos e redes sociais para uma jornada de evolução e aprendizado.</p>
+            <h2>Bem-vindo ao mundo.espirita!</h2>
+            <p>Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. Explore nossos textos, vídeos e redes sociais para uma jornada de evolução e aprendizado.</p>
+
+            <!-- Seção de Imagem -->
+            <div class="image-container">
+                <h3>Imagem Inspiradora</h3>
+                <img src="sua-imagem-aqui.jpg" alt="Descrição da Imagem" style="width: 60%;"> <!-- Altere o src e ajuste a largura conforme necessário -->
+                <p>Esta é uma imagem que representa a espiritualidade e o crescimento interior.</p>
+            </div>
+
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 mundo espírita. Todos os direitos reservados.</p>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
         <div>
             <a href="https://www.instagram.com/_mundo_espirita?igsh=MXEzbG9wMTc0MG54aw==" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.youtube.com/@_mundo_espirita" target="_blank"><i class="fab fa-youtube"></i></a>
@@ -107,5 +112,3 @@
 
 </body>
 </html>
-
-
