@@ -12,28 +12,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #add8e6; /* Azul claro */
+            background-color: white; /* Fundo branco */
             color: black; /* Texto em preto */
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
+            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
             padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 6em; /* Igual à página de vídeos */
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
+            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
             padding: 10px 0;
         }
         nav a {
-            color: black; /* Texto em preto */
+            color: black;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
@@ -47,6 +47,9 @@
         .content {
             max-width: 800px;
             margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+            padding: 20px;
+            border-radius: 10px;
         }
         h2 {
             border-bottom: 2px solid #b0e0e6;
@@ -56,7 +59,7 @@
             line-height: 1.6;
         }
         footer {
-            background-color: #b0e0e6;
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 20px;
             text-align: center;
             width: 100%;
@@ -72,14 +75,6 @@
         }
         footer a:hover {
             color: #333333;
-        }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
