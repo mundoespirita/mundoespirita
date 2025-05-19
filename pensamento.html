@@ -1,107 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>mundo.espirita</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #add8e6; /* Azul claro */
-            color: black; /* Texto em preto para melhor legibilidade */
-            margin: 0;
-            padding: 0;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Pensamento | mundo.espirita</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #add8e6;
+      color: black;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #b0e0e6;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #b0e0e6;
+      padding: 10px 0;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+    }
+    main {
+      flex: 1;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h2 {
+      border-bottom: 2px solid #4682b4;
+      padding-bottom: 5px;
+      color: #003366;
+    }
+    .accordion {
+      margin-bottom: 15px;
+      border: 1px solid #b0e0e6;
+      border-radius: 10px;
+      background-color: #ffffffc2;
+    }
+    .accordion-title {
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1.2em;
+      background-color: #d3ecf2;
+      cursor: pointer;
+    }
+    .accordion-content {
+      padding: 15px;
+      display: none;
+    }
+    footer {
+      background-color: #b0e0e6;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1.5em;
+    }
+  </style>
+  <script>
+    function toggleAccordion(id, file) {
+      const content = document.getElementById(id);
+      const isVisible = content.style.display === "block";
+
+      document.querySelectorAll('.accordion-content').forEach(div => {
+        div.style.display = 'none';
+      });
+
+      if (!isVisible) {
+        if (!content.dataset.loaded) {
+          content.innerHTML = "<p>Carregando...</p>";
+          fetch(file)
+            .then(response => response.text())
+            .then(data => {
+              content.innerHTML = data;
+              content.dataset.loaded = "true";
+              content.style.display = "block";
+            })
+            .catch(() => {
+              content.innerHTML = "<p>Erro ao carregar o conteúdo.</p>";
+              content.style.display = "block";
+            });
+        } else {
+          content.style.display = "block";
         }
-        header {
-            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
-            padding: 10px 0;
-        }
-        nav a {
-            color: black; /* Texto em preto */
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-        }
-        section {
-            padding: 20px;
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h2 {
-            border-bottom: 2px solid #b0e0e6; /* Azul claro (Light Steel Blue) para os títulos */
-            padding-bottom: 5px;
-        }
-        footer {
-            background-color: #b0e0e6; /* Azul claro (Light Steel Blue) */
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        footer a {
-            color: black; /* Texto em preto */
-            text-decoration: none;
-            margin: 0 10px;
-            font-size: 1.5em; /* Tamanho dos ícones */
-        }
-        .image-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-        .image-container img {
-            max-width: 100%; /* Imagem não excede a largura do contêiner */
-            height: auto; /* Altura automática para manter a proporção */
-        }
-    </style>
+      }
+    }
+  </script>
 </head>
 <body>
 
-    <header>
-        <h1>mundo.espirita</h1>
-    </header>
+  <header>
+    <h1>mundo.espirita</h1>
+  </header>
 
-    <nav>
-        <a href="./index.html">Home</a>
-        <a href="./textos.html">Textos</a>
-        <a href="./pensamento.html">Pensamentos</a>
-        <a href="./videos.html">Vídeos</a>
-        <a href="./redes-sociais.html">Redes Sociais</a>
-    </nav>
+  <nav>
+    <a href="./index.html">Home</a>
+    <a href="./textos.html">Textos</a>
+    <a href="./pensamento.html">Pensamento</a>
+    <a href="./videos.html">Vídeos</a>
+    <a href="./redes-sociais.html">Redes Sociais</a>
+  </nav>
 
-    <!-- Página Inicial -->
-    <section id="home">
-        <div class="content">
-            <h2>Bem-vindo ao mundo.espirita!</h2>
-            <p>Aqui compartilho reflexões sobre espiritualidade, autoconhecimento e o impacto do Espiritismo em nossas vidas. Explore nossos textos, vídeos e redes sociais para uma jornada de evolução e aprendizado.</p>
-        </div>
-    </section>
+  <main>
+    <h2>Pensamento</h2>
+    <p>Escolha um pensamento para refletir:</p>
 
-    <footer>
-        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
-        <div>
-            <a href="https://www.instagram.com/_mundo_espirita?igsh=MXEzbG9wMTc0MG54aw==" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@_mundo_espirita" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
+    <div class="accordion">
+      <div class="accordion-title" onclick="toggleAccordion('texto1', 'fe.html')">A fé transporta montanhas</div>
+      <div class="accordion-content" id="texto1"></div>
+    </div>
+
+  
+
+    <!-- Adicione mais acordeões conforme desejar -->
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
+    <div>
+      <a href="https://www.instagram.com/_mundo_espirita" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@_mundo_espirita" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </footer>
 
 </body>
 </html>

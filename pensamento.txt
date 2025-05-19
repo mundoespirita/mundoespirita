@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Pensamentos | mundo.espirita</title>
+  <title>Pensamento | mundo.espirita</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -76,7 +76,7 @@
     }
   </style>
   <script>
-    function toggleAccordion(id, url) {
+    function toggleAccordion(id) {
       const content = document.getElementById(id);
       const isVisible = content.style.display === "block";
 
@@ -86,26 +86,9 @@
       });
 
       if (!isVisible) {
-        // Se ainda não foi carregado, busca o conteúdo
-        if (!content.dataset.loaded) {
-          fetch(`./${url}`)
-            .then(response => {
-              if (!response.ok) throw new Error('Erro ao carregar o arquivo');
-              return response.text();
-            })
-            .then(data => {
-              content.innerHTML = data;
-              content.dataset.loaded = "true";
-              content.style.display = "block";
-            })
-            .catch(error => {
-              content.innerHTML = `<p style="color:red;">Não foi possível carregar o conteúdo.</p>`;
-              content.style.display = "block";
-              console.error(error);
-            });
-        } else {
-          content.style.display = "block";
-        }
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
       }
     }
   </script>
@@ -119,29 +102,23 @@
   <nav>
     <a href="./index.html">Home</a>
     <a href="./textos.html">Textos</a>
-    <a href="./pensamentos.html">Pensamentos</a>
+    <a href="./pensamento.html">Pensamento</a>
     <a href="./videos.html">Vídeos</a>
     <a href="./redes-sociais.html">Redes Sociais</a>
   </nav>
 
   <main>
-    <h2>Pensamentos</h2>
+    <h2>Pensamento</h2>
     <p>Escolha um pensamento para refletir:</p>
 
     <div class="accordion">
-      <div class="accordion-title" onclick="toggleAccordion('fe', 'fe.html')">A fé transporta montanhas</div>
-      <div class="accordion-content" id="fe"></div>
+      <div class="accordion-title" onclick="toggleAccordion('fe')">A fé transporta montanhas</div>
+      <div class="accordion-content" id="fe">
+        <p>A fé verdadeira é aquela que toca o coração e impulsiona à transformação. Ela não é cega, mas iluminada pela razão e sustentada pela esperança. Quando acreditamos com firmeza e agimos com amor, as montanhas que pareciam intransponíveis começam a se mover.</p>
+      </div>
     </div>
 
-    <div class="accordion">
-      <div class="accordion-title" onclick="toggleAccordion('transformacao', 'transformacao.html')">Transformação da Alma</div>
-      <div class="accordion-content" id="transformacao"></div>
-    </div>
 
-    <div class="accordion">
-      <div class="accordion-title" onclick="toggleAccordion('perdao', 'perdao.html')">Luz do Perdão</div>
-      <div class="accordion-content" id="perdao"></div>
-    </div>
 
   </main>
 
@@ -159,3 +136,4 @@
 
 </body>
 </html>
+
