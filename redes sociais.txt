@@ -5,48 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Redes Sociais - mundo.espirita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Inclua o mesmo estilo do arquivo index.html */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Fundo leve para a página */
+            background-color: #f0f0f0;
             color: black;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 20px;
             text-align: center;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 10px 0;
         }
         nav a {
-            color: black; /* Texto em preto */
+            color: black;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
         }
         section {
             padding: 20px;
-            text-align: center; /* Centraliza o texto da seção */
+            text-align: center;
         }
         .social-links {
             margin-top: 20px;
         }
         .social-links a {
             margin: 0 10px;
-            font-size: 2em; /* Tamanho dos ícones */
-            text-decoration: none; /* Remove o sublinhado */
-            color: black; /* Cor dos ícones */
+            font-size: 2em;
+            text-decoration: none;
+            color: black;
         }
         .social-links span {
-            margin-left: 5px; /* Espaço entre o ícone e o texto */
-            font-size: 1.2em; /* Tamanho do texto */
+            margin-left: 5px;
+            font-size: 1.2em;
+        }
+        footer {
+            background-color: rgba(176, 224, 230, 0.8);
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -59,7 +64,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="textos.html">Textos</a>
-        <a href="pensamento.html">Pensamentos</a>
+        <a href="pensamentos.html">Pensamentos</a>
         <a href="videos.html">Vídeos</a>
         <a href="redes-sociais.html">Redes Sociais</a>
     </nav>
@@ -69,14 +74,14 @@
             <h2>Redes Sociais</h2>
             <p>Siga-me nas redes sociais e acompanhe todas as atualizações e novos conteúdos:</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/seuperfil" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+                <a href="https://www.instagram.com/_mundo_espirita" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a>
                 <a href="https://www.youtube.com/@_mundo_espirita" target="_blank"><i class="fab fa-youtube"></i><span>YouTube</span></a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 mundo espírita. Todos os direitos reservados.</p>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
     </footer>
 
 </body>
