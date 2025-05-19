@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vídeos - mundo.espirita</title>
+    <title>Vídeos - Mundo Espírita</title>
     <style>
-        /* Inclua o mesmo estilo do arquivo index.html */
         body {
             font-family: Arial, sans-serif;
-            background-color: #00FFFF; /* Cor de fundo azul ciano */
-            color: black; /* Texto em preto para melhor legibilidade */
+            background-color: white; /* Cor de fundo branco */
+            color: black; /* Texto em preto */
             margin: 0;
             padding: 0;
         }
@@ -30,7 +29,7 @@
             padding: 10px 0;
         }
         nav a {
-            color: black; /* Texto em preto */
+            color: black;
             text-decoration: none;
             margin: 0 15px;
             font-size: 1.2em;
@@ -41,33 +40,35 @@
         .content {
             max-width: 800px;
             margin: 0 auto;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade para legibilidade */
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
             padding: 20px;
-            border-radius: 10px; /* Bordas arredondadas */
+            border-radius: 10px;
         }
         h2 {
-            border-bottom: 2px solid #b0e0e6; /* Azul claro (Light Steel Blue) para os títulos */
+            border-bottom: 2px solid #b0e0e6;
             padding-bottom: 5px;
         }
         .video-container {
             display: flex;
-            flex-direction: column; /* Organiza os vídeos em coluna */
-            gap: 20px; /* Espaço de 20px entre os vídeos */
+            flex-direction: column;
+            gap: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border-radius: 10px;
         }
         footer {
-            background-color: rgba(176, 224, 230, 0.8); /* Azul claro com opacidade */
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 20px;
             text-align: center;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>mundo.espirita</h1>
+        <h1>Mundo Espírita</h1>
     </header>
 
     <nav>
@@ -78,24 +79,31 @@
         <a href="redes-sociais.html">Redes Sociais</a>
     </nav>
 
-    <section id="videos" class="video">
+    <section id="videos">
         <div class="content">
             <h2>Vídeos</h2>
-            <p>Abaixo, você pode assistir algumas de nossas reflexões:</p>
+            <p>Seja bem-vindo ao nosso espaço de vídeos! Aqui você encontrará reflexões em formato audiovisual que abordam temas espirituais com leveza e profundidade.</p>
+            
             <div class="video-container">
-                <p><strong>Vídeo 1:</strong> Reflexão sobre a importância da amizade.</p>
-                <iframe src="https://www.youtube.com/embed/sFZrNjiuED0?si=fKK3ROFVhF7SEtel" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div>
+                    <p><strong>Vídeo 1:</strong> Reflexão sobre a importância da amizade.</p>
+                    <iframe src="https://www.youtube.com/embed/sFZrNjiuED0?si=fKK3ROFVhF7SEtel" title="Amizade" allowfullscreen></iframe>
+                </div>
 
-                <p><strong>Vídeo 2:</strong> Reflexão sobre reencarnação.</p>
-                <iframe src="https://www.youtube.com/embed/hBAbtJdnuyM?si=pOzaxqYkULnmxO3w" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                <div>
+                    <p><strong>Vídeo 2:</strong> Reflexão sobre reencarnação.</p>
+                    <iframe src="https://www.youtube.com/embed/hBAbtJdnuyM?si=pOzaxqYkULnmxO3w" title="Reencarnação" allowfullscreen></iframe>
+                </div>
 
-                <p><strong>Vídeo 3:</strong> Reflexão sobre alma gêmea.</p>
-                <iframe src="https://www.youtube.com/embed/WqP5J461C24?si=JY34UZL4UCHAaWck" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                <div>
+                    <p><strong>Vídeo 3:</strong> Reflexão sobre alma gêmea.</p>
+                    <iframe src="https://www.youtube.com/embed/WqP5J461C24?si=JY34UZL4UCHAaWck" title="Alma Gêmea" allowfullscreen></iframe>
+                </div>
 
- 		<p><strong>Vídeo 4:</strong> Reflexão sobre perdão.</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/hZozS0NUC4Y?si=sCBEFeASxldQVjun" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
+                <div>
+                    <p><strong>Vídeo 4:</strong> Reflexão sobre perdão.</p>
+                    <iframe src="https://www.youtube.com/embed/hZozS0NUC4Y?si=sCBEFeASxldQVjun" title="Perdão" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -106,4 +114,3 @@
 
 </body>
 </html>
-
