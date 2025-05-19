@@ -73,6 +73,7 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="textos.html">Textos</a>
+        <a href="pensamento.html">Pensamentos</a>
         <a href="videos.html">Vídeos</a>
         <a href="redes-sociais.html">Redes Sociais</a>
     </nav>
