@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Redes Sociais - mundo.espirita</title>
+    <title>Redes Sociais - Mundo Espírita</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -12,24 +12,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #add8e6; /* Azul claro */
+            background-color: white; /* fundo branco */
             color: black;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #b0e0e6;
+            background-color: rgba(176, 224, 230, 0.8); /* azul claro com opacidade */
             padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 6em; /* título maior */
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #b0e0e6;
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 10px 0;
         }
         nav a {
@@ -45,17 +45,20 @@
         }
         section {
             padding: 20px;
-            text-align: center;
         }
         .content {
             max-width: 800px;
             margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* fundo branco com opacidade */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
         }
         h2 {
             font-size: 2em;
-            margin-bottom: 10px;
             border-bottom: 2px solid #b0e0e6;
             padding-bottom: 5px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 1.3em;
@@ -69,6 +72,8 @@
             font-size: 2em;
             text-decoration: none;
             color: black;
+            display: inline-flex;
+            align-items: center;
         }
         .social-links a:hover,
         .social-links a:focus {
@@ -81,7 +86,7 @@
             vertical-align: middle;
         }
         footer {
-            background-color: #b0e0e6;
+            background-color: rgba(176, 224, 230, 0.8);
             padding: 20px;
             text-align: center;
         }
@@ -90,7 +95,7 @@
 <body>
 
     <header>
-        <h1>mundo.espirita</h1>
+        <h1>Mundo Espírita</h1>
     </header>
 
     <nav>
@@ -122,3 +127,4 @@
 
 </body>
 </html>
+
