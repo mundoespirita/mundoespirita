@@ -12,20 +12,24 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #add8e6; /* Azul claro */
             color: black;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: rgba(176, 224, 230, 0.8);
+            background-color: #b0e0e6;
             padding: 20px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: rgba(176, 224, 230, 0.8);
+            background-color: #b0e0e6;
             padding: 10px 0;
         }
         nav a {
@@ -47,11 +51,21 @@
             max-width: 800px;
             margin: 0 auto;
         }
+        h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #b0e0e6;
+            padding-bottom: 5px;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
         .social-links {
             margin-top: 20px;
         }
         .social-links a {
-            margin: 0 10px;
+            margin: 0 15px;
             font-size: 2em;
             text-decoration: none;
             color: black;
@@ -62,12 +76,12 @@
             outline: none;
         }
         .social-links span {
-            margin-left: 5px;
+            margin-left: 8px;
             font-size: 1.2em;
             vertical-align: middle;
         }
         footer {
-            background-color: rgba(176, 224, 230, 0.8);
+            background-color: #b0e0e6;
             padding: 20px;
             text-align: center;
         }
@@ -76,7 +90,7 @@
 <body>
 
     <header>
-        <h1>Mundo Espírita</h1>
+        <h1>mundo.espirita</h1>
     </header>
 
     <nav>
