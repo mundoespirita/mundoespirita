@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perdão - Mundo Espírita</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Fonte padrão */
+            background-color: #f8f8f8; /* Cor de fundo suave */
+            color: #333; /* Texto em cinza escuro para melhor contraste */
+            margin: 0;
+            padding: 20px; /* Adiciona um pouco de espaçamento */
+        }
+        h1 {
+            font-size: 2.5em; /* Tamanho do título */
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+            color: #007BFF; /* Cor do título */
+            text-align: center; /* Centraliza o título */
+        }
+        h2 {
+            font-size: 1.8em; /* Tamanho dos subtítulos */
+            margin-top: 30px; /* Espaçamento acima do subtítulo */
+            color: #000; /* Cor preta para os subtítulos */
+            font-weight: bold; /* Deixa o subtítulo em negrito */
+        }
+        p {
+            line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+            margin-bottom: 20px; /* Espaçamento abaixo de cada parágrafo */
+            text-align: justify; /* Justifica o texto */
+        }
+        footer {
+            margin-top: 40px; /* Espaçamento acima do rodapé */
+            text-align: center; /* Centraliza o texto do rodapé */
+            font-size: 0.9em; /* Tamanho da fonte do rodapé */
+            color: #666; /* Cor do texto do rodapé */
+        }
+    </style>
+</head>
+<body>
+    <h1>O espírito reside onde está o coração</h1>
+
+
+<p> Lendo um trecho do livro Amor e Verdade, de Francisco Cândido Xavier, ditado por Espíritos Diversos — capítulo 2, do amigo Celso Cassanha —, comecei a refletir sobre o quanto estamos apegados e envolvidos em nossas questões terrenas.  
+O quanto a rotina pode nos engolir, e o quanto podemos nos distanciar da nossa missão maior.
+
+A vida na Terra é difícil, desafiadora, cheia de dores — mas também repleta de alegrias.  
+Estamos aqui, mais uma vez. Mas o que estamos fazendo com essa oportunidade? Qual é o nosso propósito?  
+Estamos caminhando rumo ao progresso, ou apenas enraizando antigos e novos desafetos?
+
+Sempre me recordo da passagem que diz: “Amar quem nos ama é fácil; difícil é amar um desafeto.”  
+E talvez aí resida o verdadeiro trabalho do espírito.
+
+Se, de fato, o espírito reside onde está o coração, onde temos colocado o nosso?  
+Para onde estamos canalizando nossa energia?  
+Esse coração tem sido nutrido de amor — ou de mágoas, rancor, raiva? </p>
+
+    <footer>
+        <p>&copy; 2024 mundo.espirita. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
