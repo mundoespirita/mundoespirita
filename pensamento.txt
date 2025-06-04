@@ -134,7 +134,7 @@
         <div class="content">
             <h2>Pensamentos</h2>
             <p class="intro-text">
-                Reflexões curtas e profundas para inspirar sua caminhada espiritual. Escolha um pensamento e deixe-se tocar pela luz da sabedoria.
+                Reflexões curtas e profundas para inspirar sua caminhada espiritual. 
             </p>
 
             <div class="accordion">
